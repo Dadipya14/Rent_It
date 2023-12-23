@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hib.dto">
+ <class name="Ordertable" table="ordertable">
+  <id name="orderid" column="orderid"/>
+  <property name="renterName" column="rentername"/>
+  <property name="buyerName" column="buyername"/>
+  <property name="productId" column="productid"/>
+  <property name="productName" column="productname"/>
+  <property name="pickupAddress" column="pickupaddress"/>
+  <property name="amount" column="totalamount"/>
+  <property name="timePeriod" column="timeperiod"/>
+ </class>
+</hibernate-mapping>
